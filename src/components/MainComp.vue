@@ -1,12 +1,14 @@
 <script>
 import AwardComp from './AwardComp.vue';
 import NavComp from './NavComp.vue';
+import ServiceComp from './ServiceComp.vue';
 
 export default{
   name: "MainComp",
   components:{
     NavComp,
-    AwardComp
+    AwardComp,
+    ServiceComp
 }
 }
 </script>
@@ -14,6 +16,7 @@ export default{
 <template>
     <NavComp/>
     <AwardComp/>
+    <ServiceComp/>
 </template>
 
 <style lang="scss" scoped>

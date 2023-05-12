@@ -10,7 +10,7 @@ export default{
 </script>
 
 <template>
-    <div id="container-award" class="d-flex justify-content-center align-items-center flex-column">
+    <div id="container-award" class="d-flex justify-content-center align-items-center flex-column animate__animated animate__backInDown">
         <h3>AWARD WINNING</h3>
         <h2>Pro Barbers</h2>
         <button>MEET NOW YOUR BARBER</button>
