@@ -1,14 +1,16 @@
 <script>
+import NavComp from './NavComp.vue';
+
 export default{
   name: "MainComp",
   components:{
-    
-  }
+    NavComp
+}
 }
 </script>
 
 <template>
-    <h1 class="animate__animated animate__bounce">Ciaoooooo</h1>
+    <NavComp/>
 </template>
 
 <style lang="scss" scoped>
