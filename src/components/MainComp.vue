@@ -3,6 +3,7 @@ import AwardComp from './AwardComp.vue';
 import NavComp from './NavComp.vue';
 import ProductsComp from './ProductsComp.vue';
 import ServiceComp from './ServiceComp.vue';
+import ReviewComp from './ReviewComp.vue';
 
 export default{
   name: "MainComp",
@@ -10,7 +11,8 @@ export default{
     NavComp,
     AwardComp,
     ServiceComp,
-    ProductsComp
+    ProductsComp,
+    ReviewComp
 }
 }
 </script>
@@ -20,6 +22,7 @@ export default{
     <AwardComp/>
     <ServiceComp/>
     <ProductsComp/>
+    <ReviewComp/>
 </template>
 
 <style lang="scss" scoped>

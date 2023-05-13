@@ -72,6 +72,8 @@ export default{
             &:hover{
                 background-color: #ae8652;
                 color: black;
+                transition: 2s;
+                
             }        
         }  
         

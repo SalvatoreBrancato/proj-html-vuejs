@@ -12,9 +12,12 @@ export default{
         <!-- Parte superiore della nav con logo e icone -->
         <div class="w-100 d-flex justify-content-around align-items-center pt-5">
             <img src="../../public/img/avadabarbers-logo-x1.png" alt="Logo">
-            <div>
-                <i class="fa-solid fa-cart-shopping" style="color: #fcfcfc;"></i>
-                <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+            <div class="d-flex justify-content-around w-25">
+                <a class="animate__animated animate__zoomInDown" href="#container-service">Service</a>
+                <a class="animate__animated animate__zoomInDown" href="#container-products">Products</a>
+                <a class="animate__animated animate__zoomInDown" href="#container-review">Review</a>
+                <a href="/"><i class="fa-solid fa-cart-shopping" style="color: #fcfcfc;"></i></a>
+                <a href="/"><i class="fa-solid fa-bars" style="color: #ffffff;"></i></a>
             </div>
         </div>
         <!-- Parte centrale della nav -->
@@ -39,6 +42,20 @@ export default{
         i{
             margin-right: 20px;
             font-size: 20px;
+            &:hover{
+                color: #ae8652;
+            }
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            letter-spacing: 3px;
+            &:hover{
+                color: #ae8652;
+                transition: 0.5s;
+            }
         }
         #container-nav-center{
             //margin-top: 10%;
@@ -65,6 +82,7 @@ export default{
                 &:hover{
                     background-color: #ae8652;
                     color: black;
+                    transition: 2s;
                 }        
             }
         }
