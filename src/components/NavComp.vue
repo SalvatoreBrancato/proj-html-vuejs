@@ -12,10 +12,11 @@ export default{
         <!-- Parte superiore della nav con logo e icone -->
         <div class="w-100 d-flex justify-content-around align-items-center pt-5">
             <img src="../../public/img/avadabarbers-logo-x1.png" alt="Logo">
-            <div class="d-flex justify-content-around w-25">
+            <div class="d-flex justify-content-around w-50">
                 <a class="animate__animated animate__zoomInDown" href="#container-service">Service</a>
                 <a class="animate__animated animate__zoomInDown" href="#container-products">Products</a>
                 <a class="animate__animated animate__zoomInDown" href="#container-review">Review</a>
+                <a class="animate__animated animate__zoomInDown" href="#container-blog">Blog</a>
                 <a href="/"><i class="fa-solid fa-cart-shopping" style="color: #fcfcfc;"></i></a>
                 <a href="/"><i class="fa-solid fa-bars" style="color: #ffffff;"></i></a>
             </div>
