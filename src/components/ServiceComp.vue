@@ -3,9 +3,6 @@
 
 export default{
   name: "ServiceComp",
-  components:{
-    
-}
 }
 </script>
 
