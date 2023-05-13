@@ -11,7 +11,7 @@ export default{
     <div id="container-nav" class="vh-100">
         <!-- Parte superiore della nav con logo e icone -->
         <div class="w-100 d-flex justify-content-around align-items-center pt-5">
-            <img src="/img/avadabarbers-logo-x1.png" alt="Logo">
+            <img id="logo" src="/img/avadabarbers-logo-x2.png" alt="Logo">
             <div class="d-flex justify-content-around w-50">
                 <a class="animate__animated animate__zoomInDown" href="#container-service">Service</a>
                 <a class="animate__animated animate__zoomInDown" href="#container-products">Products</a>
@@ -31,7 +31,7 @@ export default{
                 <button>LEARN MORE</button>
             </div>
             <div class="animate__animated animate__backInRight">
-                <img src="../../public/img/avadabarbers_hero_focalmirror-600x825.png" alt="Foto taglio">
+                <img src="/img/avadabarbers_hero_focalmirror-600x825.png" alt="Foto taglio">
             </div>
         </div>
     </div>
@@ -41,7 +41,6 @@ export default{
     #container-nav{
         background-image: url(/img/avadabarbers-homepage-hero-bg.jpg);
         background-size: cover;
-        
         a{
             text-decoration: none;
             color: white;

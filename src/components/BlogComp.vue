@@ -29,7 +29,7 @@ export default{
             </div>
         </div>
         <div>
-            <button>SHOP OUR PRODUCT RANGE</button>
+            <button>READ MORE OUR BLOG</button>
         </div>
     </div>
 

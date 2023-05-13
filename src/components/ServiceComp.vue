@@ -2,8 +2,9 @@
 
 
 export default{
-  name: "ServiceComp",
+  name: "ServiceComp",  
 }
+
 </script>
 
 <template>

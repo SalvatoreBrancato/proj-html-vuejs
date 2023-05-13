@@ -1,12 +1,28 @@
 <script>
 
 export default{
-  name: "ProductsComp"
+  name: "ProductsComp",
+  data(){
+    return{
+        shop: false  
+    }
+  },
+  methods:{
+     
+    acquistaProdotto(){
+        if(this.shop == false){
+            this.shop = true
+        }else{
+            this.shop = false
+        }
+    }
+  }
 }
+
 </script>
 
 <template>
-    <div id="container-products" class="d-flex justify-content-around align-items-center flex-column">
+    <div id="container-products" class="d-flex justify-content-around align-items-center flex-column position-relative">
         <div>
             <h3 class="text-center">WE HAVE YOUR COVERED</h3>
             <h2>Avada Grooming Products</h2>
@@ -34,7 +50,18 @@ export default{
             </div>
         </div>
         <div>
-            <button>SHOP OUR PRODUCT RANGE</button>
+            <button @click="acquistaProdotto()">SHOP OUR PRODUCT RANGE</button>
+        </div>
+        <div v-if="(this.shop)" id="card-absolute" class="position-absolute d-flex justify-content-center">
+            <div id="banner">
+                <img src="/img/shaving_butter-400x400.png" alt="shaving butter">
+            </div>
+            <div id="card-absolute-right" class="py-4 px-4">
+                <h3 id="featured-product" >THIS MOUNTH FEATURED PRODUCT</h3>
+                <h2 id="product" >Shaving Butter</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae consequuntur asperiores atque suscipit ducimus eum at earum.</p>
+                <button class="m-auto">BUY NOW</button>
+            </div>
         </div>
     </div>
 </template>
@@ -42,7 +69,7 @@ export default{
 <style lang="scss" scoped>
     #container-products{
         height: 100vh;
-        background-image: url(../../public/img/avadabarbers-reviewsbackground.jpg);
+        background-image: url(/img/avadabarbers-reviewsbackground.jpg);
         background-size: cover;
         h3{
             color:#ae8652;
@@ -74,7 +101,31 @@ export default{
                 color: black;
                 transition: 2s;
             }        
-    }  
-        
-    }
+        }
+        #card-absolute{
+            bottom: -370px;
+            border-top: 5px solid #ae8652;
+            width: 60%;
+            #banner{
+                background-image: url(/img/avadabarbers-cta-background.jpg);
+                background-size: cover;
+            }
+            #card-absolute-right{
+                background-color: black;
+                #featured-product{
+                    color:#ae8652;
+                    font-size: 16px;
+                    letter-spacing: 5px;
+                }
+                #product{
+                    font-size: 60px;
+                }
+                p{
+                    color: rgba(255, 255, 255, 0.8);
+                    //width: 70%;
+                    
+                }
+            }  
+        }
+    }    
 </style>
