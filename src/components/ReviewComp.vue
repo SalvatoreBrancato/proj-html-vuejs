@@ -12,17 +12,17 @@ export default{
   <div class="d-flex justify-content-around">
     <div class="w-25 d-flex flex-column justify-content-center align-items-center py-5">
       <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum recusandae facere blanditiis labore accusamus. Labore, possimus earum ea architecto repellat fuga inventore tempora perspiciatis asperiores. Labore, officiis tenetur. Sequi, doloribus!</p>
-      <img class="my-4" src="../../public/img/avadabarbers-trimcut-gallery6-400x400.jpg" alt="foto-utente">
+      <img class="my-4" src="/img/avadabarbers-trimcut-gallery6-400x400.jpg" alt="foto-utente">
       <span>Jhon Doe</span>
     </div>
     <div class="w-25 d-flex flex-column justify-content-center align-items-center py-5">
       <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum recusandae facere blanditiis labore accusamus. Labore, possimus earum ea architecto repellat fuga inventore tempora perspiciatis asperiores. Labore, officiis tenetur. Sequi, doloribus!</p>
-      <img class="my-4" src="../../public/img/avadabarbers-trimcut-gallery7-400x402.jpg" alt="foto-utente">
+      <img class="my-4" src="/img/avadabarbers-trimcut-gallery7-400x402.jpg" alt="foto-utente">
       <span>Pete Jhones</span>
     </div>
     <div class="w-25 d-flex flex-column justify-content-center align-items-center py-5">
       <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum recusandae facere blanditiis labore accusamus. Labore, possimus earum ea architecto repellat fuga inventore tempora perspiciatis asperiores. Labore, officiis tenetur. Sequi, doloribus!</p>
-      <img class="my-4" src="../../public/img/avadabarbers-trimcut-gallery3-400x402.jpg" alt="foto-utente">
+      <img class="my-4" src="/img/avadabarbers-trimcut-gallery3-400x402.jpg" alt="foto-utente">
       <span>Mark Wilson</span>
     </div>
   </div>

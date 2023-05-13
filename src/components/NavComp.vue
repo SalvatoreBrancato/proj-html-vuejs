@@ -11,14 +11,15 @@ export default{
     <div id="container-nav" class="vh-100">
         <!-- Parte superiore della nav con logo e icone -->
         <div class="w-100 d-flex justify-content-around align-items-center pt-5">
-            <img src="../../public/img/avadabarbers-logo-x1.png" alt="Logo">
+            <img src="/img/avadabarbers-logo-x1.png" alt="Logo">
             <div class="d-flex justify-content-around w-50">
                 <a class="animate__animated animate__zoomInDown" href="#container-service">Service</a>
                 <a class="animate__animated animate__zoomInDown" href="#container-products">Products</a>
                 <a class="animate__animated animate__zoomInDown" href="#container-review">Review</a>
                 <a class="animate__animated animate__zoomInDown" href="#container-blog">Blog</a>
-                <a href="/"><i class="fa-solid fa-cart-shopping" style="color: #fcfcfc;"></i></a>
-                <a href="/"><i class="fa-solid fa-bars" style="color: #ffffff;"></i></a>
+                <a class="animate__animated animate__zoomInDown" href="#container-footer">Contacts</a>
+                <a href="/"><i class="fa-solid fa-cart-shopping" ></i></a>
+                <a href="/"><i class="fa-solid fa-bars"></i></a>
             </div>
         </div>
         <!-- Parte centrale della nav -->
@@ -38,15 +39,9 @@ export default{
 
 <style lang="scss" scoped>
     #container-nav{
-        background-image: url(../../public/img/avadabarbers-homepage-hero-bg.jpg);
+        background-image: url(/img/avadabarbers-homepage-hero-bg.jpg);
         background-size: cover;
-        i{
-            margin-right: 20px;
-            font-size: 20px;
-            &:hover{
-                color: #ae8652;
-            }
-        }
+        
         a{
             text-decoration: none;
             color: white;
@@ -57,6 +52,14 @@ export default{
                 color: #ae8652;
                 transition: 0.5s;
             }
+            i .fa-solid{
+            margin-right: 20px;
+            font-size: 20px;
+            color: white;
+            &:hover{
+                color: #ae8652;
+            }
+        }
         }
         #container-nav-center{
             //margin-top: 10%;

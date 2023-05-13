@@ -5,6 +5,7 @@ import ProductsComp from './ProductsComp.vue';
 import ServiceComp from './ServiceComp.vue';
 import ReviewComp from './ReviewComp.vue';
 import BlogComp from './BlogComp.vue';
+import FooterComp from './FooterComp.vue';
 
 export default{
   name: "MainComp",
@@ -14,7 +15,8 @@ export default{
     ServiceComp,
     ProductsComp,
     ReviewComp,
-    BlogComp
+    BlogComp,
+    FooterComp
 }
 }
 </script>
@@ -26,6 +28,7 @@ export default{
     <ProductsComp/>
     <ReviewComp/>
     <BlogComp/>
+    <FooterComp/>
 </template>
 
 <style lang="scss" scoped>

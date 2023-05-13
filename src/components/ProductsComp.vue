@@ -13,22 +13,22 @@ export default{
         </div>
         <div class="d-flex justify-content-around align-items center">
             <div class="d-flex justify-content-center align-items-center flex-column">
-                <img src="../../public/img/brush_dark-400x400.png" alt="Brush">
+                <img src="/img/brush_dark-400x400.png" alt="Brush">
                 <h4>Brush</h4>
                 <span class="animate__animated animate__pulse">€15,00</span>
             </div>
             <div class="d-flex justify-content-center align-items-center flex-column">
-                <img src="../../public/img/scissors-400x400.png" alt="Scrissors">
+                <img src="/img/scissors-400x400.png" alt="Scrissors">
                 <h4>Scissors</h4>
                 <span class="animate__animated animate__pulse">€85,00</span>
             </div>
             <div class="d-flex justify-content-center align-items-center flex-column">
-                <img src="../../public/img/hot_oil_dark-400x400.png" alt="Hot Oil">
+                <img src="/img/hot_oil_dark-400x400.png" alt="Hot Oil">
                 <h4>Hot Oil</h4>
                 <span class="animate__animated animate__pulse">€18,00</span>
             </div>
             <div class="d-flex justify-content-center align-items-center flex-column">
-                <img src="../../public/img/straight_razor_dark-400x400.png" alt="Straight Razor">
+                <img src="/img/straight_razor_dark-400x400.png" alt="Straight Razor">
                 <h4>Straight Razor</h4>
                 <span class="animate__animated animate__pulse">€30,00</span>
             </div>
