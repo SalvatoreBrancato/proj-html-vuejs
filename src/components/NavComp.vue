@@ -13,11 +13,11 @@ export default{
         <div class="w-100 d-flex justify-content-around align-items-center pt-5">
             <img id="logo" src="/img/avadabarbers-logo-x2.png" alt="Logo">
             <div class="d-flex justify-content-around w-50">
-                <a class="animate__animated animate__zoomInDown" href="#container-service">Service</a>
-                <a class="animate__animated animate__zoomInDown" href="#container-products">Products</a>
-                <a class="animate__animated animate__zoomInDown" href="#container-review">Review</a>
-                <a class="animate__animated animate__zoomInDown" href="#container-blog">Blog</a>
-                <a class="animate__animated animate__zoomInDown" href="#container-footer">Contacts</a>
+                <a class="animate__animated animate__zoomInDown animate__delay-1s" href="#container-service">Service</a>
+                <a class="animate__animated animate__zoomInDown animate__delay-2s" href="#container-products">Products</a>
+                <a class="animate__animated animate__zoomInDown animate__delay-3s" href="#container-review">Review</a>
+                <a class="animate__animated animate__zoomInDown animate__delay-4s" href="#container-blog">Blog</a>
+                <a class="animate__animated animate__zoomInDown animate__delay-5s" href="#container-footer">Contacts</a>
                 <a href="/"><i class="fa-solid fa-cart-shopping" ></i></a>
                 <a href="/"><i class="fa-solid fa-bars"></i></a>
             </div>
@@ -28,13 +28,47 @@ export default{
                 <h1 class="animate__animated animate__backInLeft">Barber Shop</h1>
                 <div id="linea-gold" class="mt-4"></div>
                 <p class="mt-4">The Pinnacle of Male grooming</p>
-                <button>LEARN MORE</button>
+                <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">LEARN MORE</button>
             </div>
-            <div class="animate__animated animate__backInRight">
+            <div class="animate__animated animate__backInRight animate__delay-0.5s animate__slow">
                 <img src="/img/avadabarbers_hero_focalmirror-600x825.png" alt="Foto taglio">
             </div>
         </div>
     </div>
+    <!-- inizio offcanvass -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">
+                Iscriviti per accedere alla tua area personale.
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column align-items-start">
+            <div class="d-flex justify-content-around align-items-center my-3">
+                <span class="me-3">NOME:</span>
+                <input type="text">
+            </div>
+            <div class="d-flex justify-content-around align-items-center my-3">
+                <span class="me-3">COGNOME:</span>
+                <input type="text">
+            </div>
+            <div class="d-flex justify-content-around align-items-center my-3">
+                <span class="me-3">INDIRIZZO:</span>
+                <input type="text">
+            </div>
+            <div class="d-flex justify-content-around align-items-center my-3">
+                <span class="me-3">INSERISCI LA TUA ETA': </span>
+                <input type="radio" name="età" id="minorenne" class="ms-3" value="minorenne">
+                <label for="minorenne"> -18</label>
+                <input type="radio" name="età" id="età" class="ms-3">
+                <label for="minorenne"> +18</label>
+            </div>
+            <div>
+                <button type="submit" class="mt-4">Iscriviti</button>
+            </div>
+        </div>
+    </div>
+<!-- fine ofcanvass -->
 </template>
 
 <style lang="scss" scoped>
@@ -85,9 +119,44 @@ export default{
                 &:hover{
                     background-color: #ae8652;
                     color: black;
-                    transition: 2s;
+                    transition: 1.5s;
                 }        
             }
+        }
+    }
+    #offcanvasRight{
+        background-image: url(/img/avadabarbers-about-introbackground.jpg);
+        background-size: cover;
+        width: 30%;
+        button{
+            border: 2px solid #ae8652;
+            background-color: rgba(0, 0, 0, 0.0);
+            color: #ae8652;  
+            padding: 10px;
+            font-weight: bold;
+            &:hover{
+                background-color: #ae8652;
+                color: black;
+                transition: 1.5s;
+            }        
+        }
+        h5{
+            color: rgba(255, 255, 255, 0.8);
+            font-family: 'Abril Fatface', cursive;
+        }
+        span,
+        label{
+            letter-spacing: 3px;
+            color:#ae8652;
+            font-size: 14px;
+        }
+        input{
+            border-radius: 10px;
+            border: 2px solid #ae8652;
+            background-color: rgba(28, 28, 28, 0.5);
+            color: rgba(255, 255, 255, 0.8);
+            letter-spacing: 3px;
+            text-transform: uppercase;
         }
     }
 

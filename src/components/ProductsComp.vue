@@ -31,22 +31,22 @@ export default{
             <div class="d-flex justify-content-center align-items-center flex-column">
                 <img src="/img/brush_dark-400x400.png" alt="Brush">
                 <h4>Brush</h4>
-                <span class="animate__animated animate__pulse">€15,00</span>
+                <span class="animate__animated animate__pulse animate__infinite">€15,00</span>
             </div>
             <div class="d-flex justify-content-center align-items-center flex-column">
                 <img src="/img/scissors-400x400.png" alt="Scrissors">
                 <h4>Scissors</h4>
-                <span class="animate__animated animate__pulse">€85,00</span>
+                <span class="animate__animated animate__pulse animate__infinite">€85,00</span>
             </div>
             <div class="d-flex justify-content-center align-items-center flex-column">
                 <img src="/img/hot_oil_dark-400x400.png" alt="Hot Oil">
                 <h4>Hot Oil</h4>
-                <span class="animate__animated animate__pulse">€18,00</span>
+                <span class="animate__animated animate__pulse animate__infinite">€18,00</span>
             </div>
             <div class="d-flex justify-content-center align-items-center flex-column">
                 <img src="/img/straight_razor_dark-400x400.png" alt="Straight Razor">
                 <h4>Straight Razor</h4>
-                <span class="animate__animated animate__pulse">€30,00</span>
+                <span class="animate__animated animate__pulse animate__infinite">€30,00</span>
             </div>
         </div>
         <div>
