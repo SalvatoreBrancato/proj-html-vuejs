@@ -119,7 +119,7 @@ export default{
                 &:hover{
                     background-color: #ae8652;
                     color: black;
-                    transition: 1.5s;
+                    transition: 2s;
                 }        
             }
         }
@@ -137,7 +137,7 @@ export default{
             &:hover{
                 background-color: #ae8652;
                 color: black;
-                transition: 1.5s;
+                transition: 2s;
             }        
         }
         h5{

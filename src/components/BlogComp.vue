@@ -37,7 +37,7 @@ export default{
 
 <style lang="scss" scoped>
     #container-blog{
-        background-image: url(/img/avadabarbers-trimcut-hero.jpg);
+        background-image: url(/img/avadabarbers-about-ptb-retina.jpg);
         background-size: cover;
         h3{
             color:#ae8652;
