@@ -1,10 +1,37 @@
 <script>
+import {store} from '../store'
+
 export default{
-  name: "NavComp",
-  components:{
+    name: "NavComp",
+   
+    data(){
+        return{
+            store
+        }
+    },
+    methods: {
+        
+        azzeraInput(){ 
+        
+        store.registrazione = true
+            
+        this.store.arrayUtenti.push({ 
+        nome: store.nome,
+        cognome: store.cognome,
+        indirizzo: store.indirizzo,
+        email: store.email,
+        età: store.età
+        });
     
-  }
+        store.nome = '';
+        store.cognome = '',
+        store.indirizzo = '',
+        store.email = '',
+        store.età = ''
+        }
+    }
 }
+
 </script>
 
 <template>
@@ -44,28 +71,35 @@ export default{
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body d-flex flex-column align-items-start">
-            <div class="d-flex justify-content-around align-items-center my-3">
-                <span class="me-3">NOME:</span>
-                <input type="text">
+            <div class="d-flex justify-content-around align-items-center my-3 w-100">
+                <span class="me-3 w-25">NOME:</span>
+                <input class="w-50" type="text" v-model="store.nome">
             </div>
-            <div class="d-flex justify-content-around align-items-center my-3">
-                <span class="me-3">COGNOME:</span>
-                <input type="text">
+            <div class="d-flex justify-content-around align-items-center my-3 w-100">
+                <span class="me-3 w-25">COGNOME:</span>                    
+                <input class="w-50" type="text" v-model="store.cognome">
             </div>
-            <div class="d-flex justify-content-around align-items-center my-3">
-                <span class="me-3">INDIRIZZO:</span>
-                <input type="text">
+            <div class="d-flex justify-content-around align-items-center my-3 w-100">
+                <span class="me-3 w-25">INDIRIZZO:</span>
+                <input class="w-50"  type="text" v-model="store.indirizzo">
             </div>
-            <div class="d-flex justify-content-around align-items-center my-3">
-                <span class="me-3">INSERISCI LA TUA ETA': </span>
-                <input type="radio" name="età" id="minorenne" class="mx-3" value="minorenne">
+            <div class="d-flex justify-content-around align-items-center my-3 w-100">
+                <span class="me-3 w-25 ">EMAIL:</span>
+                <input class="w-50"  type="email" v-model="store.email">
+            </div>
+            <div class="d-flex justify-content-around align-items-center my-3 w-100">
+                <span class="me-3 w-25">ETA':</span>
+                <input type="radio" name="età" id="minorenne" class="" value="minorenne" v-model="store.età">
                 <label for="minorenne"> -18</label>
-                <input type="radio" name="età" id="età" class="mx-3">
+                <input type="radio" name="età" id="maggiorenne" class="" value="maggiorenne" v-model="store.età">
                 <label for="minorenne"> +18</label>
             </div>
-            <div>
-                <button type="submit" class="mt-4">Iscriviti</button>
+            <div class="w-100 d-flex justify-content-center">
+                <button type="submit" class="mt-4 w-25" @click="azzeraInput()">Iscriviti</button>
             </div>
+            <!-- <div class="w-100 d-flex justify-content-center align-items-center">
+
+            </div> -->
         </div>
     </div>
 <!-- fine ofcanvass -->
@@ -144,6 +178,7 @@ export default{
         h5{
             color: $white;
             font-family: 'Abril Fatface', cursive;
+            font-size: 22px;
         }
         span,
         label{

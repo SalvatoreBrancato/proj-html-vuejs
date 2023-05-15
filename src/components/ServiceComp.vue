@@ -3,25 +3,11 @@
 
 export default{
   name: "ServiceComp",
-//    mounted() {
-//         const observer = new IntersectionObserver(entries => {
-//         entries.forEach(entry => {
-//             if (entry.isIntersecting) {
-//             entry.target.classList.add('animate__animated');
-//             observer.unobserve(entry.target);
-//             }else{
-//                 entry.target.classList.remove('animate__animated');
-//                 observer.unobserve(entry.target);
-//             }
-//         });
-//         });
-
-//      observer.observe(this.$refs['animate__animated']);
-//     },
-  methods: {
-  
-  }
+    mounted(){
+      
+    }
 }
+
 
 </script>
 

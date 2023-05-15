@@ -13,6 +13,7 @@ data(){
   return{
     store
   }
+  
 }
 }
 </script>
