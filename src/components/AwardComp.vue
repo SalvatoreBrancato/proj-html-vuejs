@@ -88,27 +88,28 @@ export default{
 </template>
 
 <style lang="scss" scoped>
+@use '../style/main.scss' as *;
     #container-award{
         background-image: url(/img/avadabarbers-about-introbackground.jpg);
         height: 50vh;
         h2{
-            color: rgba(255, 255, 255, 0.6);
+            color: $whiteTrasparent;
             font-size: 90px;
             font-family: 'Abril Fatface', cursive;
         }
         h3{
-            color:#ae8652;
+            color:$gold;
             font-size: 20px;
             letter-spacing: 15px;
         }
         button{
-            border: 2px solid #ae8652;
+            border: 2px solid $gold;
             background-color: rgba(0, 0, 0, 0.0);
-            color: #ae8652;  
+            color: $gold;  
             padding: 15px;
             font-weight: bold;
             &:hover{
-                background-color: #ae8652;
+                background-color: $gold;
                 color: black;
                 transition: 2s;
             }        
@@ -120,13 +121,13 @@ export default{
         height: 70%;
         h5{
             text-align: center;
-            color: #ae8652;
+            color: $gold;
             letter-spacing: 15px;
             font-size: 20px;
             width: 100%;
         }
         h2{
-            color:#ae8652;
+            color:$gold;
             font-size: 20px;
             letter-spacing: 15px;
         }

@@ -58,9 +58,9 @@ export default{
             </div>
             <div class="d-flex justify-content-around align-items-center my-3">
                 <span class="me-3">INSERISCI LA TUA ETA': </span>
-                <input type="radio" name="età" id="minorenne" class="ms-3" value="minorenne">
+                <input type="radio" name="età" id="minorenne" class="mx-3" value="minorenne">
                 <label for="minorenne"> -18</label>
-                <input type="radio" name="età" id="età" class="ms-3">
+                <input type="radio" name="età" id="età" class="mx-3">
                 <label for="minorenne"> +18</label>
             </div>
             <div>
@@ -72,6 +72,7 @@ export default{
 </template>
 
 <style lang="scss" scoped>
+@use '../style/main.scss' as *;
     #container-nav{
         background-image: url(/img/avadabarbers-homepage-hero-bg.jpg);
         background-size: cover;
@@ -82,7 +83,7 @@ export default{
             font-size: 18px;
             letter-spacing: 3px;
             &:hover{
-                color: #ae8652;
+                color: $gold;
                 transition: 0.5s;
             }
             i .fa-solid{
@@ -90,34 +91,34 @@ export default{
             font-size: 20px;
             color: white;
             &:hover{
-                color: #ae8652;
+                color: $gold;
             }
         }
         }
         #container-nav-center{
             //margin-top: 10%;
             h1{
-                color: rgba(255, 255, 255, 0.8);
+                color: $white;
                 font-size: 90px;
                 font-family: 'Abril Fatface', cursive;
             }
             #linea-gold{
-                border-top: 5px solid #ae8652;
+                border-top: 5px solid $gold;
                 width: 60%;
             }
             p{
-                color:#ae8652;
+                color:$gold;
                 opacity: 0.5;
                 font-size: 2rem;
             }
             button{
-                border: 2px solid #ae8652;
+                border: 2px solid $gold;
                 background-color: rgba(0, 0, 0, 0.0);
-                color: #ae8652;  
+                color: $gold;  
                 padding: 15px;
                 font-weight: bold;
                 &:hover{
-                    background-color: #ae8652;
+                    background-color: $gold;
                     color: black;
                     transition: 2s;
                 }        
@@ -129,32 +130,32 @@ export default{
         background-size: cover;
         width: 30%;
         button{
-            border: 2px solid #ae8652;
+            border: 2px solid $gold;
             background-color: rgba(0, 0, 0, 0.0);
-            color: #ae8652;  
+            color: $gold;  
             padding: 10px;
             font-weight: bold;
             &:hover{
-                background-color: #ae8652;
+                background-color: $gold;
                 color: black;
                 transition: 2s;
             }        
         }
         h5{
-            color: rgba(255, 255, 255, 0.8);
+            color: $white;
             font-family: 'Abril Fatface', cursive;
         }
         span,
         label{
             letter-spacing: 3px;
-            color:#ae8652;
+            color:$gold;
             font-size: 14px;
         }
         input{
             border-radius: 10px;
-            border: 2px solid #ae8652;
+            border: 2px solid $gold;
             background-color: rgba(28, 28, 28, 0.5);
-            color: rgba(255, 255, 255, 0.8);
+            color: $white;
             letter-spacing: 3px;
             text-transform: uppercase;
         }

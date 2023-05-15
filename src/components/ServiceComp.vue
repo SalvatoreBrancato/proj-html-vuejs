@@ -52,16 +52,17 @@ export default{
 </template>
 
 <style lang="scss" scoped>
+@use '../style/main.scss' as *;
     #container-service{
         height: 100vh;
         background-color: white;
         h2{
-            color: rgba(152, 151, 151, 0.6);
+            color: $grayTrasparent;
             font-size: 90px;
             font-family: 'Abril Fatface', cursive;
         }
         h3{
-            color:#ae8652;
+            color:$gold;
             font-size: 20px;
             letter-spacing: 15px;
         }
@@ -69,11 +70,11 @@ export default{
             width: 30%;
             h4{
                 font-family: 'Abril Fatface', cursive;
-                color: #ae8652;
+                color: $gold;
                 font-size: 40px;
             }
             p{
-                color: rgba(152, 151, 151, 0.8);
+                color: $grayTrasparent;
                 font-size: 18px;
                 font-family: 'Montserrat', sans-serif;
             }

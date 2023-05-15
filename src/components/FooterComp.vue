@@ -36,19 +36,20 @@ export default{
 </template>
 
 <style lang="scss" scoped>
+@use '../style/main.scss' as *;
     #container-footer{
         height: 50vh;
         background-image: url(/img/avadabarbers-services-ptb-retina.jpg);
         background-size: cover;  
-        border-top: 5px solid #ae8652;
+        border-top: 5px solid $gold;
         button{
-            border: 2px solid #ae8652;
+            border: 2px solid $gold;
             background-color: rgba(0, 0, 0, 0.0);
-            color: #ae8652;  
+            color: $gold;  
             padding: 15px;
             font-weight: bold;
             &:hover{
-                background-color: #ae8652;
+                background-color: $gold;
                 color: black;
                 transition: 2s;
             }        
@@ -59,18 +60,17 @@ export default{
             width: 100%;
             padding: 0;
             li{
-                color: white;
+                color: $white;
                 width: 100%;
             }
         }
         span{
-            color: white;
             text-align: center;
-            color: #ae8652;
+            color: $gold;
             font-weight: bold;
         }
         i{
-            color: white;
+            color: $white;
             text-align: center;
             margin: 0 10px;
             font-size: 20px;

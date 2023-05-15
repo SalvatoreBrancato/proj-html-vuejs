@@ -30,15 +30,16 @@ export default{
 </template>
 
 <style lang="scss" scoped>
+@use '../style/main.scss' as *;
   #container-review{
     height: 100vh;
     h3{
-      color:#ae8652;
+      color:$gold;
       font-size: 20px;
       letter-spacing: 15px;
     }
     h2{
-      color: rgba(152, 151, 151, 0.6);
+      color: $grayTrasparent;
       font-size: 90px;
       font-family: 'Abril Fatface', cursive;
     }
@@ -47,7 +48,7 @@ export default{
       width: 30%;
     }
     span{
-      color:#ae8652;
+      color:$gold;
       font-size: 18px;
       font-weight: bold;
     }

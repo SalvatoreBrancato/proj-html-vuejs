@@ -67,44 +67,45 @@ export default{
 </template>
 
 <style lang="scss" scoped>
+@use '../style/main.scss' as *;
     #container-products{
         height: 100vh;
         background-image: url(/img/avadabarbers-reviewsbackground.jpg);
         background-size: cover;
         h3{
-            color:#ae8652;
+            color: $gold;
             font-size: 20px;
             letter-spacing: 15px;
         }
         h2{
-            color: rgba(255, 255, 255, 0.6);
+            color: $whiteTrasparent;
             font-size: 90px;
             font-family: 'Abril Fatface', cursive;
         }
         h4{
-            color:#ae8652;
+            color: $gold;
             font-size: 28px;
             font-family: 'Abril Fatface', cursive;
         }
         span{
-            color:#ae8652;
+            color: $gold;
             font-size: 18px;
         }
         button{
-            border: 2px solid #ae8652;
+            border: 2px solid  $gold;
             background-color: rgba(0, 0, 0, 0.0);
-            color: #ae8652;  
+            color:  $gold;  
             padding: 15px;
             font-weight: bold;
             &:hover{
-                background-color: #ae8652;
+                background-color:  $gold;
                 color: black;
                 transition: 2s;
             }        
         }
         #card-absolute{
             bottom: -370px;
-            border-top: 5px solid #ae8652;
+            border-top: 5px solid  $gold;
             width: 60%;
             #banner{
                 background-image: url(/img/avadabarbers-cta-background.jpg);
@@ -113,7 +114,7 @@ export default{
             #card-absolute-right{
                 background-color: black;
                 #featured-product{
-                    color:#ae8652;
+                    color: $gold;
                     font-size: 16px;
                     letter-spacing: 5px;
                 }
@@ -121,9 +122,7 @@ export default{
                     font-size: 60px;
                 }
                 p{
-                    color: rgba(255, 255, 255, 0.8);
-                    //width: 70%;
-                    
+                    color: $white;
                 }
             }  
         }
