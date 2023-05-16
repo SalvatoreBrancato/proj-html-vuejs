@@ -82,7 +82,7 @@ export default{
                 <button @click="confermaPrenotazione()" class="w-50">Prenota</button>
             </div>
             <div v-if=(store.prenotazione) id="conferma-appuntamento" class="h-100 d-flex justify-content-center align-items-center flex-column">
-                <h5 class="text-center mt-2">Prenotazione confermata, riceverai una promemoria un giorno prima dell'appuntamento.</h5>
+                <h5 class="text-center mt-2">Prenotazione confermata, riceverai un promemoria un giorno prima dell'appuntamento.</h5>
                 <h3 class="text-center mt-2">Ti aspettiamo!</h3>
             </div>
         </div>
