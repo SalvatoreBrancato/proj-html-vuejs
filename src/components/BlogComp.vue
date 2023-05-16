@@ -29,7 +29,7 @@ export default{
             </div>
         </div>
         <div>
-            <button>READ MORE OUR BLOG</button>
+            <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">READ MORE OUR BLOG</button>
         </div>
     </div>
 

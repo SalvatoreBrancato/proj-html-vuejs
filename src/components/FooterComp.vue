@@ -1,7 +1,23 @@
 <script>
+import {store} from '../store'
 
 export default{
-  name: "FooterComp"
+  name: "FooterComp",
+
+    data(){
+        return{
+            store
+        }
+    },
+    methods: {
+        confermaPrenotazione(){
+            if(store.prenotazione == false){
+                store.prenotazione = true
+            }else{
+                store.prenotazione = false
+            }
+        }
+    }    
 }
 </script>
 
@@ -9,7 +25,7 @@ export default{
     <div id="container-footer" class="d-flex justify-content-around align-items-end py-5">
         <div class="d-flex flex-column">
             <img src="/img/avadabarbers_footer_shop_image-400x312.png" alt="">
-            <button>SHOP OUR RANGE NOW</button>
+            <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">SHOP OUR RANGE NOW</button>
         </div>
         <div class="d-flex justify-content-around align-items-center flex-column h-100">
             <img src="/img/avadabarbers-stickylogo-x2.png" alt="Logo">
@@ -28,10 +44,50 @@ export default{
                 <i class="fa-brands fa-instagram"></i>
             </div>
         </div>
-        <div class="d-flex flex-column">
-            <img src="/img/avadabarbers_footer_appointment_image-400x312.png" alt="">
-            <button>BOOK YOUR APPOINTMENT</button>
+        <div class="d-flex flex-column align-items-center">
+            <img class="imgRasoio" src="/img/safety_set-400x400.png" alt="">
+            <button class="w-100" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">BOOK YOUR APPOINTMENT</button>
         </div>
+
+        <!-- Inzio offcanvas -->
+        <div class="offcanvas offcanvas-start h-50" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Prenota il tuo appuntamento</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div>
+                <div class="offcanvas-body d-flex justify-content-around">
+                    <span class="w-25">Data:</span>
+                    <select class="" name="giorno" id="giorno">
+                        <option class="text-center" v-for="(element, index) in 30 " value="">{{element}}</option>
+                    </select>
+                    <select class="w-25" name="mese" id="mese">
+                        <option class="text-center" v-for="(element, index) in store.arrayMesi" value="">{{element}}</option>
+                    </select>
+                    <select name="anno" id="anno">
+                        <option class="text-center" v-for="(element, index) in store.arrayAnno " value="">{{element}}</option>
+                    </select>
+                </div>
+                <div class="offcanvas-body d-flex justify-content-around">
+                    <span class="w-25">Orario:</span>
+                    <select class="w-25" name="ore" id="ore">
+                        <option class="text-center" v-for="(element, index) in 10 ">{{ index + 9 }}</option>
+                    </select>
+                    <select class="w-25" name="minuti" id="minuti">
+                        <option class="text-center" v-for="(element, index) in 4">{{index * 15}}</option>
+                    </select>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center mt-5">
+                <button @click="confermaPrenotazione()" class="w-50">Prenota</button>
+            </div>
+            <div v-if=(store.prenotazione) id="conferma-appuntamento" class="h-100 d-flex justify-content-center align-items-center flex-column">
+                <h5 class="text-center mt-2">Prenotazione confermata, riceverai una promemoria un giorno prima dell'appuntamento.</h5>
+                <h3 class="text-center mt-2">Ti aspettiamo!</h3>
+            </div>
+        </div>
+        <!-- Fine offcanvas -->
+
     </div>
 </template>
 
@@ -74,6 +130,30 @@ export default{
             text-align: center;
             margin: 0 10px;
             font-size: 20px;
+        }
+        .imgRasoio{
+            width: 70%; 
+        }
+        #offcanvasWithBothOptions{
+            background-color: black;
+            h5{
+            color: $white;
+            font-family: 'Abril Fatface', cursive;
+            font-size: 22px;
+            }
+            #giorno,
+            #mese,
+            #anno,
+            #ore,
+            #minuti{
+                height: 10%;
+                color: $white;
+                border: 2px solid $gold;
+                background-color: black;
+            }
+            h3{
+                color: $white;
+            }
         }       
     }
 </style>

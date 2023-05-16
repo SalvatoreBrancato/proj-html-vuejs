@@ -97,9 +97,9 @@ export default{
             <div class="w-100 d-flex justify-content-center">
                 <button type="submit" class="mt-4 w-25" @click="azzeraInput()">Iscriviti</button>
             </div>
-            <!-- <div class="w-100 d-flex justify-content-center align-items-center">
-
-            </div> -->
+            <div id="box-registrazione" v-if=(store.registrazione) class="w-100 h-25 mt-5 d-flex justify-content-center align-items-center">
+                <h5 class="text-center">Registrazione avvenuta correttamente, riceverai una mail di conferma al seguente indirizzo: {{store.arrayUtenti[0].email}}</h5>
+            </div>
         </div>
     </div>
 <!-- fine ofcanvass -->
@@ -193,6 +193,9 @@ export default{
             color: $white;
             letter-spacing: 3px;
             text-transform: uppercase;
+        }
+        #box-registrazione{
+            border: 2px solid $gold;
         }
     }
 

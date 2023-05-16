@@ -3,7 +3,7 @@
 /* width */
 ::-webkit-scrollbar {
     width: 8px;
-    background-color: #ae8652;
+    background-color: $gold;
   }
 
   /* Track */
@@ -18,7 +18,10 @@
 
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: rgba(255, 255, 255, 0.8); 
+    background: $gold; 
   }
 
+  :root {
+    --animate-delay: 0.5s;
+  }
   

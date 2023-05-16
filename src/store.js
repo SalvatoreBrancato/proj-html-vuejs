@@ -9,6 +9,26 @@ export const store = reactive(
          età: '',
          arrayUtenti : [],
          registrazione: false,
-         y: window.screenY
+         prenotazione: false,
+         y: window.screenY,
+         arrayMesi:[
+            'Gennaio',
+            'Febraio',
+            'Marzo',
+            'Aprile',
+            'Maggio',
+            'Giugno',
+            'Luglio',
+            'Agosto',
+            'Settembre',
+            'Ottobre',
+            'Novembre',
+            'Dicembre'
+         ],
+         arrayAnno: [
+            '2023',
+            '2024',
+            '2025'
+         ]         
       }
 )
